@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
+
     static Calculator calculator;
 
     @BeforeAll
@@ -42,6 +43,6 @@ class CalculatorTest {
                     calculator.division(6, 0);
                 }, "ArithmeticException error was expected");
 
-       Assertions.assertEquals("/ by zero", thrown.getMessage());
+       Assertions.assertEquals("деление на ноль", thrown.getMessage());
     }
 }
